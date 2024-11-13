@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #dbe9ff;
+
+}
+
+h2 {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 3.5rem;
+}
+
+.container {
+  background-color: #f0f9ff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: min(90%, 31.25em);
+  padding: 3.75em 0;
+  border-radius: 0.8em;
+  box-shadow: 0 1.97em 3.75em rgba(1, 87, 185, 0.2);
+}
+
+.timer-display {
+  position: relative;
+  width: 96%;
+  background-color: #3c98ff;
+  bottom: 3.1rem;
+  left: 2%;
+  padding: 1em 0;
+  color: #f0f9ff;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0.3em;
+  box-shadow: 0 0.5em 1em rgba(1, 87, 185, 0.2);
+
+}
+
+.buttons {
+  width: 80%;
+  margin: 1.8em auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  font-size: 1.12em;
+  background-color: #dbe9ff;
+  color: #3c98ff;
+  border: none;
+  border-radius: 0.5em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  outline: none;
+}
+
+#start-timer {
+  background-color: #3c98ff;
+  color: #f0f9ff;
+}
+
+
+@media screen and (max-width: 480px) {
+  h2 {
+    text-align: center;
+    position: absolute;
+    font-family: "Roboto Mono";
+    font-size: 1.3rem;
+    top: 12%;
+    font-weight: 500;
+
+
+  }
+
+  .container {
+    height: 400px;
+  }
+
+  .timer-display {
+    max-width: 100%;
+    font-size: 1.5rem;
+    min-height: 180px;
+    position: relative;
+    bottom: 3.4rem;
+
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+    position: relative;
+    bottom: 3rem;
+
+  }
+
+  .start {
+    position: relative;
+    top: 5rem;
+  }
+
+  .resize {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: .1rem;
+    width: 46%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .pause {
+    position: absolute;
+    top: .1rem;
+    left: 9rem;
+
+  }
+
+  .reset {
+    position: absolute;
+    top: .1rem;
+
+  }
+}
+

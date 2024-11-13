@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(17, 39, 65);
+}
+
+.container {
+  display: flex;
+  cursor: pointer;
+}
+
+.box {
+  width: 45px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  background-color: deepskyblue;
+  position: relative;
+  overflow: hidden;
+}
+
+.box::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  transition: 0.4s;
+}
+
+.box:nth-child(1)::before {
+  content: "C";
+  transform: translateY(100%);
+}
+
+.box:nth-child(2)::before {
+  content: "L";
+  transform: translateY(-100%);
+}
+
+.box:nth-child(3)::before {
+  content: "I";
+  transform: translateY(100%);
+}
+
+.box:nth-child(4)::before {
+  content: "C";
+  transform: translateY(-100%);
+}
+
+.box:nth-child(5)::before {
+  content: "K";
+  transform: translateY(100%);
+}
+
+.container:hover .box::before {
+  transform: translate(0%);
+}
+

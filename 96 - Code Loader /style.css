@@ -1,0 +1,49 @@
+.loader-code{
+  height: 100vh;
+  width: 100vw;
+  background: #F6FBFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.loader {
+  color: transparent;
+  background: linear-gradient(to bottom right, #30EAFF, #0f6bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 30px;
+  opacity: 0.8;
+}
+
+.loader:before {
+  content: "{";
+  color: transparent;
+  background: linear-gradient(to bottom right, #30EAFF, #0f6bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
+.loader:after {
+  content: "}";
+  color: transparent;
+  background: linear-gradient(to bottom right, #30EAFF, #0f6bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}

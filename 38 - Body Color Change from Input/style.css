@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body {
+  background-color: #404254;
+
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.input-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+}
+
+.input-box input {
+  height: 60px;
+  width: 105%;
+  border: none;
+  outline: none;
+  margin: 0 15px 0 15px;
+  border-radius: 10px;
+  padding: 0 0 0 15px;
+  font-size: 1.2rem;
+  font-weight: 410;
+  cursor: pointer;
+}
+
+label {
+  position: relative;
+  top: 16rem;
+  color: #EAF0FF;
+}
+
+.input-box button {
+  height: 50px;
+  padding: 20px 20px 20px 20px;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 400;
+  border-radius: 7px;
+  border: none;
+  outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 19rem;
+  background-color: #1CE100;
+  cursor: pointer;
+}
+
+
+button:active {
+  -webkit-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  transform: scale(1.03);
+}
+

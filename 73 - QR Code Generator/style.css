@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+  background-color: #26292f;
+}
+
+.container {
+  min-height: 250px;
+  background: #E1E9FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 460px;
+  border-radius: 10px;
+  padding: 25px 20px;
+}
+
+.container p {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.container input {
+  height: 45px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: #fff;
+  border: 1px solid #2D2D2D;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.container button {
+  padding: 12px 15px;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 1em;
+  background-color: #4485EA;
+  color: #fff;
+  font-weight: 600;
+}
+
+.img-box {
+  margin-top: 2em;
+  border-radius: 7px;
+}
+
+.img-box img {
+  width: 100%;
+  padding: 10px;
+}
+
+.img-box .showimg {
+  height: 300px;
+  margin: 10px auto;
+  border: 1px solid #d1d1d1;
+}
+
+.error {
+  -webkit-animation: shake 0.1s linear 10;
+  animation: shake 0.1s linear 10;
+}
+
+@-webkit-keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  75% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes shake {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  25% {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+  }
+
+  50% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  75% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}

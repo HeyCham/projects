@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.up,
+.down {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card {
+  width: 90px;
+  height: 90px;
+  background: white;
+  box-shadow: #32325d40 0 2px 5px -1px,
+    #0000004d 0 1px 3px -1px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  scale: 1.1;
+}
+
+.card i {
+  position: absolute;
+  font-size: 1.3rem;
+}
+
+.card:hover i {
+  color: white;
+}
+
+.card1 {
+  border-radius: 90px 5px 5px 5px;
+}
+
+.card1:hover {
+  background: #cc39a4;
+}
+.card1 i {
+  bottom: 25px;
+  right: 25px;
+  color: #cc39a4;
+}
+.card2 {
+  border-radius: 5px 90px 5px 5px;
+}
+
+.card2:hover {
+  background: #03a9f4;
+}
+
+.card2 i {
+  bottom: 25px;
+  left: 25px;
+  color: #03a9f4;
+}
+.card3 {
+  border-radius: 5px 5px 5px 90px;
+}
+
+.card3:hover {
+  background: #8c9eff;
+}
+
+.card3 i {
+  top: 25px;
+  right: 25px;
+  color: #8c9eff;
+}
+
+.card4 {
+  border-radius: 5px 5px 90px 5px;
+}
+
+.card4:hover {
+  background: black;
+}
+
+.card4 i {
+  top: 25px;
+  left: 25px;
+  color: black;
+}

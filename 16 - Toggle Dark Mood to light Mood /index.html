@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Toggle Dark Mood to light Mood</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="inner-circle"></div>
+    </div>
+  </div>
+  <script>
+  
+    const container = document.querySelector('.container');
+    const box = document.querySelector('.box');
+    const innerCircle = document.querySelector('.inner-circle');
+    
+    innerCircle.addEventListener('click',() =>{
+      
+      box.classList.toggle('box-toggle')
+      innerCircle.classList.toggle('inner-circle-toggle');
+      container.classList.toggle('container-toggle');
+    })
+    
+    
+  </script>
+</body>
+</html>

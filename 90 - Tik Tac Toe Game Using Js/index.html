@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- @Created By- @0pensource | Cham -->
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Tik Tac Toe Game </title>
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h3>Tic Tac Toe Game</h3>
+    <div class="game-container">
+      <div class="buttons">
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+        <button class="turns"></button>
+      </div>
+      
+    </div>
+    <div class="msg-wins" style="visibility: hidden">
+      <p id="para">Congratulations- <span id="turn"> </span>Wins</p>
+    </div>
+    <div class="reset-btn">
+      <button class="restart">Restart</button>
+    </div>
+  </div>
+  <div class="output-box">
+    <div class="box" visibility = 'hidden'>
+      <p id="para-cong">Congratulations- <span id="turn-cong"></span>Wins</p>
+      <div class="btns">
+        <button class="restart" onclick="restart()">Re-Start</button>
+        <button class="restart" onclick="restart()">New Game</button>
+      </div>
+      
+    </div>
+    
+  </div>
+  
+  <!-- Two files two style approach -->
+  <!--<script src="main.js"></script>-->
+  <script src="index.js"></script>
+</body>
+
+</html>
+

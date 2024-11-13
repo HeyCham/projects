@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+  height: 100%;
+}
+
+#first, .second, .third, .fourth, .five{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}
+#first {
+  background-image: url('https://source.unsplash.com/1400x900/?forest');
+  min-height: 100vh;
+}
+.second{
+  background-image: url('https://source.unsplash.com/1400x900/?moon');
+  height: 500px; /* Adjust height as needed */
+}
+.third{
+  background-image: url('https://source.unsplash.com/1400x900/?mountain');
+  height: 400px; /* Adjust height as needed */
+}
+.fourth{
+  background-image: url('https://source.unsplash.com/1400x900/?river');
+  height: 500px; /* Adjust height as needed */
+}
+.five{
+  background-image: url('https://source.unsplash.com/1400x900/?forest');
+  height: 700px;
+  margin-bottom: 30px;
+}
+
+.textbg{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 7px 20px;
+}
+
+.text{
+  font-size: 18px;
+}
+

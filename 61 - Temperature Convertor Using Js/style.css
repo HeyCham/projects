@@ -1,0 +1,291 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+
+}
+
+body {
+  background-color: #2E2F3B;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+}
+
+#form-container {
+  width: 80%;
+  min-height: 405px;
+  background-color: hsla(236, 7%, 54%, 1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 5px 5px 8px rgba(30, 33, 36, 1);
+          box-shadow: 5px 5px 8px rgba(30, 33, 36, 1);
+
+
+}
+
+h2 {
+  color: hsla(236, 15%, 89%, 1);
+  color: #D3D3FF;
+  text-align: center;
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+  
+
+}
+
+label {
+  color: #242424;
+  font-weight: 410;
+  margin-top: .5rem;
+  line-height: 1.5rem;
+  margin-left: .1rem;
+  padding: 2px;
+}
+
+.inputTemp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+
+select,
+input,
+output {
+  width: 100%;
+  height: 38px;
+  gap: 3rem;
+  border-radius: 3px;
+  background-color: #B6BECF;
+  overflow: hidden;
+  border: .9px solid #D3D3FF;
+  padding: 4px;
+  
+
+}
+input, span {
+  padding: 8px;
+  text-align: left;
+  font-weight: 400;
+}
+
+
+option {
+  font-size: 4rem;
+}
+
+.output {
+  width: 100%;
+  height: 38px;
+  background-color: #B6BECE;
+  border-radius: 3px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #43464C;
+  font-size: 1.1rem;
+}
+
+input {
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+input::-webkit-input-placeholder {
+  color: #43464C;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+input::-moz-placeholder {
+  color: #43464C;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+input:-ms-input-placeholder {
+  color: #43464C;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+input::-ms-input-placeholder {
+  color: #43464C;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+input::placeholder {
+  color: #43464C;
+  font-size: 1.1rem;
+  text-align: left;
+  font-weight: 400;
+}
+
+select option {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#resetBtn,
+#covertBtn {
+  padding: 10px 21px;
+  background-color: hsl(120, 90%, 40%);
+  opacity: .8;
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  text-transform: uppercase;
+  height: 35px;
+  margin-top: .5rem;
+ 
+}
+
+#btn {
+  font-size: 13.5px;
+}
+
+#btn:hover,
+#btn2:hover {
+  background-color: hsl(120%, 90%, 30%);
+
+}
+
+#btn:active,
+#btn2:active {
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+@media (min-width:800px){
+  .form-container{
+    position: relative;
+  }
+  .main-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    position: absolute;
+    left: 10rem;
+    top: 12rem;
+    gap: 1rem;
+    width: 110%;
+    margin: 0 auto;
+  }
+  label{
+    position: relative;
+    bottom: 3rem;
+    left: 3.7rem;
+    font-weight: 400;
+  }
+  #firstOption{
+    left: 2.3rem;
+  }
+  .inputTemp{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 3.5rem;
+    right: 30.4rem;
+    width: 1800px;
+  
+  }
+  #input{
+    position: relative;
+    font-size: 1rem;
+    top: -.5rem;
+    left: .2rem;
+  }
+  
+  
+  .output{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 37.5%;
+    position: absolute;
+    top: 10.5rem;
+    bottom: 0;
+    left: 7.3rem;
+    font-weight: bold;
+    
+  }
+  .btn{
+    position: relative;
+    top: 9rem;
+  }
+}

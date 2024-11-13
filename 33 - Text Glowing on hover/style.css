@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Mulish&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #121f21;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  position: relative;
+  font-size: 10vw;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-stroke: 0.1vh rgba(255, 255, 255, 0.4);
+  letter-spacing: 2px;
+  
+}
+
+.text::before{
+  position: absolute;
+  content: attr(anim-text);
+  height: 100%;
+  width: 0;
+  color: #3FFFFD;
+  border-right: 2px solid #3FFFFD;
+  -webkit-text-stroke: 0.2vh #3FFFFD;
+  overflow: hidden;
+  transition: 1.4s cubic-bezier(0.9,.78,.21,.96);
+}
+
+.text:hover::before{
+  width: 110%;
+  filter: drop-shadow(0 0 60px #3FFFFD);
+}

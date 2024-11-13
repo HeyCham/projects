@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+
+.link {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 10px #0003;
+          box-shadow: 0 0 10px #0003;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.facebook {
+  background: #0163e0;
+}
+
+.twitter {
+  background: #1DA1F2;
+}
+
+.instagram {
+  /*background: #cd486b;*/
+  background: -o-linear-gradient(125deg, #f9ce34,#ee2a7b,#6228d7);
+  background: linear-gradient(-35deg, #f9ce34,#ee2a7b,#6228d7);
+}
+
+.github {
+  background: #212121;
+}
+
+.linkedin {
+  background: #0077d5;
+}
+
+.link:hover {
+  width: 150px;
+}
+
+.icon {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.link:hover .icon {
+  width: 30%;
+}
+
+.text {
+  position: absolute;
+  right: 0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 00;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.link:hover .text {
+  width: 70%;
+  opacity: 1;
+}
+
+
+

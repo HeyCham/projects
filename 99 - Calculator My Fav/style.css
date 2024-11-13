@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@font-face {
+  font-family: 'Times-Regular';
+  src: url('assets/fonts/times new roman.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Times;
+  font-family: 'Times-Regular';
+  font-weight: 8000;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  height: 100vh;
+  min-width: 100vw;
+  background-color: #191A23;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  padding: 45px 40px 0 30px;
+  height: 85px;
+  border-start-start-radius: 15px;
+  border-start-end-radius: 15px;
+  background-color: #1F202B;
+  background-color: #191a23;
+  border: none;
+  text-align: right;
+  color: #D9E3F46B;
+  font-size: 2.3rem;
+  font-weight: 200;
+  color: #ECF0FFD4;
+  margin-top: 1em;
+  
+}
+
+input::placeholder {
+  font-size: 2.3rem;
+  color: #D9E3F46B;
+  font-weight: 200;
+}
+
+.buttons-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  height: 440px;
+  padding: 15px 10px 15px 10px;
+  margin-top: 6rem;
+}
+
+.buttons {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+  border-radius: 50%;
+  margin: .58rem;
+  text-align: center;
+  border: none;
+  font-size: 25px;
+  font-weight: 100;
+  background-color: transparent;
+  border: .5px solid #8695A6B3;
+  color: #D4E0F0B3;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.9);
+  position: relative;
+  overflow: hidden;
+  transition: all .1s ease-in;
+
+}
+
+.delete {
+  font-size: 21px;
+  padding: 0 2px 0 0;
+}
+
+.operator-btn {
+  border: .5px solid #8695A6B3;
+  color: #0FD819;
+  background-color: rgba(0, 0, 0, 0.14);
+ 
+}
+/*
+.buttons:active, .buttons:hover:not(.results) {
+  background-color: #5F748E61;
+  transform: scale(1.05);
+  font-weight: 300;
+}
+*/
+.buttons:focus:not(.results){
+  background-color: #BED3FF17;
+}
+
+.results {
+  background-color: #0FD819;
+  color: #0D121E;
+  font-weight: 800;
+  font-size: 26px;
+  
+}
+
+.results:actinve {
+  background-color: #3BFF50;
+  font-weight: 600;
+}
+i{
+  padding: 0 2px 0 0;
+  color: #0FD815;
+}
+
+/* For desktop */  
+
+@media only screen and (min-width: 500px){
+
+  .calculator {
+    margin: 0;
+    width: 60%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+  }
+
+  .buttons-all {
+    height: auto;
+    grid-template-columns: repeat(4, 1fr); 
+  
+  }
+  .buttons{
+    margin: 1.9rem;
+    height: 90px;
+    width: 90px;
+    position: relative;
+  }
+  input{
+    padding: 15px 225px 50px 0;
+    font-size: 5rem;
+    height: 300px;
+    
+  }
+  input::placeholder{
+    font-size: 5rem;
+  }
+}
+
+span{
+  position: absolute;
+  background: #A4A4A4;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: ripple 1s linear infinite;
+}
+
+@keyframes ripple {
+  0%{
+    width: 0;
+    height: 0;
+    opacity: 0.2;
+  }
+  100%{
+    height: 200px;
+    width: 200px;
+    opacity: 0;
+  }
+}

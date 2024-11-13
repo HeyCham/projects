@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background: url('7b712505c5e84ed9f4e7ff12bdb6894b.jpg') no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+/**
+.container::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 60px 60px ;
+  background-image:
+    linear-gradient(to right, #2C2C2C 1px, transparent 1px),
+    linear-gradient(to bottom, #616161 1px, transparent 1px);
+  z-index: -1;
+}
+*/
+.wrapper {
+  min-height: 420px;
+  width: 90%;
+  background: transparent;
+  border: .2px solid white;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-filter: saturate(1);
+  filter: saturate(1);
+  -webkit-box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(39px);
+  -webkit-backdrop-filter: blur(39px);
+  -webkit-transform: translate(.6em, 1.1em);
+  -ms-transform: translate(.6em, 1.1em);
+  transform: translate(.6em, 1.1em);
+}
+
+.wrapper h2 {
+  color: #E9F0FF;
+  text-align: start;
+  -webkit-transform: translateY(-25px);
+  -ms-transform: translateY(-25px);
+  transform: translateY(-25px);
+}
+
+.input-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+input:not([type="checkbox"]),
+button {
+  position: relative;
+  height: 42px;
+  width: 70%;
+  border-radius: 20px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  /*border: .2px groove #E9F0FF;*/
+  color: #E9F0FF;
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+
+}
+
+.email,
+.password,
+.password-confirm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 42px;
+  width: 100%;
+  background: transparent;
+  border: 2px solid #C70FEFB5;
+  border: .2px groove #E9F0FF;
+  border-radius: 20px;
+  position: relative;
+  top: 20px;
+}
+
+.email:hover, .password:hover{
+  border-color: #2A5FFF;
+}
+
+.email img,
+.password img,
+.password-confirm img {
+  position: absolute;
+  height: 17px;
+  right: 20px;
+  -webkit-filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.7));
+}
+
+.password img,
+.password-confirm img {
+  height: 18px;
+}
+
+.wrapper button {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  width: 400%;
+  -webkit-transform: translateY(40px) translateX(-80px);
+  -ms-transform: translateY(40px) translateX(-80px);
+  transform: translateY(40px) translateX(-80px);
+  background: -o-linear-gradient(245deg, #FF4E4E -20%, #000000);
+  background: linear-gradient(-155deg, #FF4E4E -20%, #000000);
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+  border: .2px groove #E9F0FF;
+}
+
+button:active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: translateY(45px) translateX(-80px);
+  -ms-transform: translateY(45px) translateX(-80px);
+  transform: translateY(45px) translateX(-80px);
+  opacity: 0.6;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(-20%, #FF4E4EF2), to(#000000E8));
+  background: -o-linear-gradient(top right, #FF4E4EF2 -20%, #000000E8);
+  background: linear-gradient(to bottom left, #FF4E4EF2 -20%, #000000E8);
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  color: #E9F0FF;
+  -webkit-transform: translateX(-58px) translateY(-5px);
+  -ms-transform: translateX(-58px) translateY(-5px);
+  transform: translateX(-58px) translateY(-5px);
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  color: #E9F0FF;
+  outline: 0;
+  border: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: hsla(221, 100%, 96%, 0.8);
+}
+
+input::-moz-placeholder {
+  color: hsla(221, 100%, 96%, 0.8);
+}
+
+input:-ms-input-placeholder {
+  color: hsla(221, 100%, 96%, 0.8);
+}
+
+input::-ms-input-placeholder {
+  color: hsla(221, 100%, 96%, 0.8);
+}
+
+input::placeholder {
+  color: hsla(221, 100%, 96%, 0.8);
+}
+
+
+.checkbox p {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.no-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #E9F0FF;
+  font-size: 12px;
+  -webkit-transform: translateY(10px) translateX(-10px);
+  -ms-transform: translateY(10px) translateX(-10px);
+  transform: translateY(10px) translateX(-10px);
+}
+
+.no-account a {
+  color: #175CFF;
+  margin-left: 5px;
+  text-decoration: none;
+}
+.no-account a:hover{
+  text-decoration: underline;
+}
+@media screen and (min-width: 769px) {
+  .wrapper {
+    height: 400px;
+    width: 40%;
+  }
+}

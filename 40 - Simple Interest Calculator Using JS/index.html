@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>S-I Calculator</title>
+
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h2>Simple Interest Calculator</h2>
+  <form id="form-container">
+    <label for="principal">
+      Principal:</label>
+    <input type="number" id="principal" autofocus>
+
+    <label for="rate">Rate :</label>
+    <input type="number" id="rate">
+    <label for="time">Time :</label>
+    <input type="number" id="time">
+    
+    <div class="btn">
+      <button type="button" id="btn2">Reset</button>
+    <button type="button" id="btn" onclick="calculate()">SUBMIT</button>
+      
+    </div>
+    
+    
+    <div class="results">
+      <p>Total : <span id="total-amount">₹0.00</span></p>
+    </div>
+
+  </form>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

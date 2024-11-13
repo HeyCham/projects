@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+#game {
+  min-height: 100vh;
+  width: 355px;
+  border: 1px solid black;
+  background: url('assets/bg.jpg');
+  background-size: contain;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5555;
+}
+
+#bluecar {
+  height: 100px;
+  width: 130px;
+  position: relative;
+  top: 0px;
+  left: 45px;
+  text-align: center;
+  -webkit-animation: move 1s linear infinite;
+  animation: move 1s linear infinite;
+
+}
+
+#bluecar img {
+  height: 100px;
+}
+
+@-webkit-keyframes move {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 100vh;
+  }
+
+}
+
+@keyframes move {
+  0% {
+    top: 0px;
+  }
+
+  100% {
+    top: 100vh;
+  }
+
+}
+
+#racecar {
+  height: 100px;
+  width: 130px;
+  position: relative;
+  top: 250px;
+  left: 130px;
+  text-align: center;
+}
+
+#racecar img {
+  height: 100px;
+}
+
+#result {
+  min-height: 100vh;
+  width: 100%;
+  background-color: cornflowerblue;
+  font-size: 19px;
+  text-align: center;
+  color: white;
+  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#score {
+  font-size: 2.2rem;
+  color: #efefef;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 20px;
+
+}
+
+#result h1 {
+  position: relative;
+  top: 15rem;
+  width: 200px;
+}
+
+#btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  color: cyan;
+  font-size: 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  margin-top: 3.5em;
+}
+
+#btn,
+#score,
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+}
